@@ -1,1 +1,8 @@
 <app-navbar></app-navbar>
+<p-button label="Submit" [loading]="true" (onClick)="load()"></p-button>
+<p-button
+  label="Loading custom icon"
+  [loading]="true"
+  loadingIcon="pi pi-bell"
+  (onClick)="load()"
+></p-button>
