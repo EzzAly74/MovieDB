@@ -1,0 +1,22 @@
+* {
+  font-size: 13px;
+}
+*:not(.pi) {
+  font-family: "Poppins";
+}
+nav {
+  background: #000;
+}
+.nav-link {
+  color: #fff !important;
+}
+input[aria-label="Search"] {
+  height: 35px;
+  align-self: center;
+  width: 300px;
+}
+@media (max-width: 768px) {
+  form {
+    order: 20;
+  }
+}

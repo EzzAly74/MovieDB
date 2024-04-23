@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ButtonModule } from 'primeng/button';
+import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, ButtonModule],
+  declarations: [AppComponent, NavbarComponent, HomeComponent],
+  imports: [BrowserModule, AppRoutingModule, ButtonModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
