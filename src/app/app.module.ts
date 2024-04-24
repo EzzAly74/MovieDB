@@ -8,10 +8,19 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ButtonModule } from 'primeng/button';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselModule } from 'primeng/carousel';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, ButtonModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ButtonModule,
+    HttpClientModule,
+    CarouselModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

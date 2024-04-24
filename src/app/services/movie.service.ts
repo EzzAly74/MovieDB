@@ -16,8 +16,13 @@ export class MovieService {
       params: this.params,
     });
   }
-  getMovieDetailsById(id: any): Observable<any> {
+  getMovieDetailsById(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/movie/${id}?language=en-US`, {
+      params: this.params,
+    });
+  }
+  getAllgenres(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/genre/movie/list?language=en)`, {
       params: this.params,
     });
   }
