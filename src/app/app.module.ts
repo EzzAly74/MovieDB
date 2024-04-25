@@ -15,8 +15,8 @@ import { CarouselModule } from 'primeng/carousel';
 
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, TrendingComponent, ReleaseMoviesComponent, MovieComponent],
-  imports: [BrowserModule, AppRoutingModule, ButtonModule, HttpClientModule, VoteAvgPipe, FormsModule, ReactiveFormsModule],
+  declarations: [AppComponent,HomeComponent, NavbarComponent, TrendingComponent, ReleaseMoviesComponent, MovieComponent],
+  imports: [BrowserModule, AppRoutingModule, ButtonModule, HttpClientModule, VoteAvgPipe, FormsModule, ReactiveFormsModule, CarouselModule],
   providers: [],
   bootstrap: [AppComponent],
 })
