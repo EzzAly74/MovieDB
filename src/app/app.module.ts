@@ -10,6 +10,9 @@ import { MovieComponent } from './movie/movie.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VoteAvgPipe } from './pipes/vote-avg.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { CarouselModule } from 'primeng/carousel';
+
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, TrendingComponent, ReleaseMoviesComponent, MovieComponent],
