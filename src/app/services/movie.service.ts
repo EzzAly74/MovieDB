@@ -16,7 +16,8 @@ export class MovieService {
       params: this.params,
     });
   }
-  getMovieDetailsById(id: number): Observable<any> {
+
+  getMovieDetailsById(id: any): Observable<any> {
     return this.http.get(`${this.baseUrl}/movie/${id}?language=en-US`, {
       params: this.params,
     });
