@@ -1,6 +1,6 @@
 import { imgPath } from 'src/main';
 import { MovieService } from './../services/movie.service';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
