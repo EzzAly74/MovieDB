@@ -7,7 +7,7 @@
             </button>
        </div>
         <div class="all-movies row " >
-            <article class="movie-view col-12 mt-4 col-sm-6 mt-lg-0 col-lg-4 " *ngFor="let movie of viewTrending;" >
+            <article class="movie-view col-12 mt-4 col-sm-6 mt-lg-0 col-lg-4 " *ngFor="let movie of viewTrending; let i = index" >
                 <div class="left-icon">
                     <i class="pi pi-clock"></i>
                     <span>3:12:00</span>
@@ -20,7 +20,7 @@
                 <div class="footer d-flex justify-content-between mt-2 align-items-center">
                     <p class="text-white">{{movie.original_name}}</p>
                     <div class="btns">
-                        <button class="btn btn-danger rounded-2 ms-2" >Comedy</button>
+                        <button class="btn btn-danger rounded-2 ms-2">Comedy</button>
                     </div>
                 </div>
             </article>
