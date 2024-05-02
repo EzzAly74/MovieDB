@@ -17,7 +17,7 @@ export class TrendingService {
   constructor(private http:HttpClient) {}
   
   public getTrending() : Observable<any> {
-    return this.http.get(`${this.baseUrl}/trending/person/week`, {
+    return this.http.get(`${this.baseUrl}/trending/movie/week`, {
       params: this.params
     })
   }
