@@ -8,3 +8,36 @@ body {
   overflow-x: hidden;
   background-color: #000;
 }
+
+/* general setting for button navigators */
+button.p-carousel-prev,
+button.p-carousel-next {
+    // height: 86% ;
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    top: 40%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+  }
+button.p-carousel-prev {
+  left: 10px;
+}
+
+button.p-carousel-next {
+  right: 10px;
+}
+
+button.p-carousel-prev:hover,
+button.p-carousel-next:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+.p-carousel,
+.p-element {
+  margin: 0px;
+  padding: 0px;
+}
+.p-carousel-items-container {
+  gap: 20px;
+}

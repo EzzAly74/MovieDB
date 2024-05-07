@@ -55,8 +55,8 @@ export class TrendingComponent {
             }
           })
         });
-        
       },
+      
       error: err => {
         console.log(err);
       }

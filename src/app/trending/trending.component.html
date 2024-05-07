@@ -6,7 +6,7 @@
                 View all <i class="pi pi-arrow-right"></i>
             </button>
        </div>
-    <div class="all-movies row">
+    <!-- <div class="all-movies row">
         <article class="movie-view col-12 mt-4 col-sm-6 mt-lg-0 col-lg-4 " *ngFor="let movie of viewTrending; let i = index" >
             <section class="container">
                 <div class="left-icon">
@@ -33,36 +33,40 @@
                 </section>
             </div>
         </article>
-    </div>
-     
-    <p-carousel class="all-movies row" [value]="allTrending" [numVisible]="3" [numScroll]="1" [circular]="false">
-        <ng-template class="movie-view " let-product pTemplate="item">
-            <section class="container">
-                <div class="left-icon">
-                    <i class="pi pi-clock"></i>
-                    <span>{{runtimes[allTrending.indexOf(product)] | runtimeMovie }} </span>
-                </div>
-                <div class="right-icon">
-                    <i class="pi pi-star"></i>
-                    <span>{{ product["vote_average"] | voteAvg }}</span>
-                </div>
-           </section>
-            <img class="poster-img" src="{{imgPath}}{{product.poster_path}}" alt="">
-            <img class="play-img" src="assets/images/play.png" alt="">
-            <div class="footer row w-100 justify-content-between mt-2 align-items-baseline">
-                <p class="text-white col-4">{{product.original_title}}</p>
-                <section class="btns generes col-8">
-                    <div *ngFor="let id of product.genre_ids">
-                        <div *ngFor="let item of allGeneries">
-                            <button class="btn btn-danger rounded-2 ms-2" *ngIf="id == item.id">
-                                {{item.name}}
-                            </button>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </ng-template>
-    </p-carousel>
+    </div> -->
 
+    <div class="all-movies">
+        <section class="movie-view">
+            <p-carousel class="container row" [value]="allTrending" [numVisible]="3"  [numScroll]="1" [circular]="false" [showIndicators]="false">
+                <ng-template  let-product pTemplate="item" class="template">
+                    <section>
+                        <div class="left-icon">
+                            <i class="pi pi-clock"></i>
+                            <span>{{runtimes[allTrending.indexOf(product)] | runtimeMovie }} </span>
+                        </div>
+                        <div class="right-icon">
+                            <i class="pi pi-star"></i>
+                            <span>{{ product["vote_average"] | voteAvg }}</span>
+                        </div>
+                    </section>
+                    <img class="poster-img" src="{{imgPath}}{{product.poster_path}}" alt="">
+                    <img class="play-img" src="assets/images/play.png" alt="">
+                    <div class="footer row w-100 justify-content-between mt-2 align-items-baseline">
+                        <p class="text-white col-4">{{product.original_title}}</p>
+                        <section class="btns generes col-8">
+                            <div *ngFor="let id of product.genre_ids">
+                                <div *ngFor="let item of allGeneries">
+                                    <button class="btn btn-danger rounded-2 ms-2" *ngIf="id == item.id">
+                                        {{item.name}}
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </ng-template>   
+            </p-carousel>
+        </section>
+    </div>
+        
     </div>
 </section>
